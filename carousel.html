@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Font Awesome CDN-->
+    <script src="https://kit.fontawesome.com/20c02e1873.js" crossorigin="anonymous"></script>
+
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="stylesheet" href="css/carousel.css">
+
+    <title>JS Slideshow</title>
+</head>
+<body>
+    <header>
+        <img src="images/carousel/logofrog.png" alt="Frog">
+        <div>
+            <h2>Check out my trippy frogs</h2>
+            <h3>Don't touch though</h3>
+        </div>
+    </header>
+
+    <!--Navigation Menu-->
+    <button class="toggle-menu" id="toggle-menu" data-visible="false"></button>
+    <nav class="navmenu" id="navmenu" data-visible="false">
+        <div><a href="index.html">Home</a></div>
+        <div class="submenu">
+            <div class ="submenu-button"><a href="imagegallery.html">Gallery <i class="fa-solid fa-caret-down"></i></a></div>
+            <div class="submenu-content">
+                <a href="#classicrock">Classic Rock</a>
+                <a href="punkrock">Punck Rock</a>
+                <a href="softrock">Soft Rock</a>
+            </div>
+        </div> 
+        <div class="submenu">
+            <div class="submenu-button"><a href="videogallery.html">Videos <i class="fa-solid fa-caret-down"></i></a></div>
+            <div class="submenu-content">
+                <a href="fusion">Fusion Jazz</a>
+                <a href="modal">Modal Jazz</a>
+                <a href="hardbop">Hard Bop</a>
+            </div>
+        </div>
+        <div class="submenu">
+            <div class="submenu-botton"><a href="carousel.html">Carousel <i class="fa-solid fa-caret-down"></i></a></div>
+            <div class="submenu-content">
+                <a href="thrash">Thrash Metal</a>
+                <a href="death">Death Metal</a>
+                <a href="sludge">Sludge Metal</a>
+            </div>
+        </div>
+        <div><a href="about">About</a></div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="imagecarousel">
+                <div class="image fadeout"><img src="images/carousel/frog_1.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_2.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_3.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_4.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_5.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_6.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_7.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_8.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_9.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_10.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_11.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_12.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/carousel/frog_13.jpg" alt=""></div>
+
+                <!-- Font Awesome Next & Previous Buttons -->
+                <div class="prev"><i onclick="showImage(-1)" class="fa-solid fa-backward"></i></div>
+                <div class="next"><i onclick="showImage(1)" class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="copyright"></span> Ethan Makabali Productions</p>
+    </footer>
+</body>
+</html>
+<script src="js/carousel.js"></script>
